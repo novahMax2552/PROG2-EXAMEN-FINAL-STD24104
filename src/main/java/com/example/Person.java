@@ -1,14 +1,17 @@
 package com.example;
 
+import java.time.Instant;
+
+
 public class Person {
     private final int id;
-    private final String name;
-    private final String firstName;
-    private final String email;
+    protected final String name;
+    protected final String firstName;
+    protected final String email;
     private final Instant birthDate;
-    private final String phoneNumber;
+    protected final String phoneNumber;
 
-    public Person(int id, String name, String firstName, String email, Instant birthDate, String phoneNumber) {
+    public Person(int id, String name, String firstName, String email, String birthDate2, String phoneNumber, Instant birthDate) {
         this.id = id;
         this.name = name;
         this.firstName = firstName;

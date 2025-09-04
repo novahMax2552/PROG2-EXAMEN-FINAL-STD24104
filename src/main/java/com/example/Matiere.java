@@ -1,7 +1,8 @@
+package com.example;
+
 import java.util.List;
 import java.util.ArrayList;
 
-package com.example;
 
 public class Matiere {
     private final int id;
@@ -9,9 +10,10 @@ public class Matiere {
     private final List<Note> notes = new ArrayList<>();
     private final Enseignant enseignant;
 
-    public Matiere(int id, String name) {
+    public Matiere(int id, String label, Enseignant enseignant) {
         this.id = id;
-        this.name = name;
+        this.label = label;
+        this.enseignant = enseignant;
     }
 
     public int getId() {
