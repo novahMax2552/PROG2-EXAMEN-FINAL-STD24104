@@ -31,4 +31,8 @@ public class Person {
     public String getEmail(){
         return email;
     }
+
+    public Instant getBirthDate() {
+        return birthDate;
+    }
 }
