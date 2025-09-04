@@ -6,7 +6,20 @@ import java.util.List;
 
 
 public class Note {
-    private final Instant dateExam = null;
-    private final float valeurInitial = 0;
-    private final List<HistoriqueNote> historiqueNotes = new ArrayList<>();
+    Instant dateExam;
+    private float valeurInitial;
+    List<HistoriqueNote> historiqueNotes = new ArrayList<>();
+
+    public Note(Instant dateExam, float valeurInitial) {
+        this.dateExam = dateExam;
+        this.valeurInitial = valeurInitial;
+    }
+
+    public Instant getDateExam() {
+        return dateExam;
+    }
+
+    public float getValeurInitial() {
+        return valeurInitial;
+    }
 }
