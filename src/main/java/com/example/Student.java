@@ -1,8 +1,13 @@
+import java.time.Instant;
+import java.util.List;
+
 package com.example;
 
 public class Student extends Person {
     private final String groupe;
     private final Tuteur tuteur;
+    private final List<Matiere> matieres;
+
 
     public Student(int id, String name, String firstName, String email, String birthDate, String phoneNumber, String groupe, Tuteur tuteur) {
         super(id, name, firstName, email, birthDate, phoneNumber);
