@@ -18,6 +18,21 @@ public class Exam {
         this.coefficient = coefficient;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public String getTitle() {
+        return Title;
+    }
+    public LocalDateTime getDateExam() {
+        return dateExam;
+    }
+
+    public int getCoefficient() {
+        return coefficient;
+    }
+
     public double getExamGrade (Exam exam, Student student, Instant t){
         double grade = 0.0;
         for (Matiere matiere : student.getMatieres()) {
